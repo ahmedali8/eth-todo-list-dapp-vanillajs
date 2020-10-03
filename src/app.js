@@ -13,7 +13,7 @@ App = {
 
         if (typeof web3 !== 'undefined') {
             App.web3Provider = web3.currentProvider
-            web3 = new Web3(web3.currentProvider)
+            web3 = new Web3(web3.currentProvider || "http://localhost:8545");
         } else {
             alert("Please connect to Metamask.")
         }
