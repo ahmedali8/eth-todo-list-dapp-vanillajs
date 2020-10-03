@@ -23,3 +23,10 @@ ul {
     color: grey;
     text-decoration: line-through;
 }
+
+
+@media (max-width: 720px) {
+    main {
+        margin-top: 120px;
+    }
+}
